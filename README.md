@@ -32,7 +32,7 @@ let arrData = [
 
 1,2组件效果图
 
-![Image text]https://github.com/caoyanyuan/img/blob/master/images/components.png
+![Image text](https://github.com/caoyanyuan/img/blob/master/images/components.png)
 
 ## Build Setup
 
