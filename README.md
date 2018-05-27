@@ -30,6 +30,9 @@ let arrData = [
 
 >percent: 当前进度传入
 
+1,2组件效果图
+
+![Image text]https://github.com/caoyanyuan/img/blob/master/images/components.png
 
 ## Build Setup
 
