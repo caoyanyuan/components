@@ -24,11 +24,18 @@ let arrData = [
 ]
 ```
 
-### 2、移动端进度条：progress-bar
+### 2、移动端进度条：progress-mobile
 
 ##### 传入参数
 
 >percent: 当前进度传入
+
+### 3、pc端进度条：progress-pc
+
+> min 进度条最小值
+> max 进度条最大值
+> v-model 对当前值进行双向绑定实时显示拖拽进度
+
 
 1,2组件效果图
 

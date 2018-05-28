@@ -1,13 +1,30 @@
 <template>
   <div>
-    <lian :lists="lianData" :curId="lianCurId"></lian>
-    <progress-bar :percent="percent" class="progress"></progress-bar>
+    <div class="list">
+      <span>lian.vue:</span>
+      <div class="com-wrap">
+        <lian :lists="lianData" :curId="lianCurId"></lian>
+      </div>
+    </div>
+    <div class="list">
+      <span>progress-mobile.vue:</span>
+      <div class="com-wrap">
+       <progress-mobile :percent="percent" class="progress"></progress-mobile>
+      </div>
+    </div>
+    <div class="list">
+      <span>progress-pc.vue:</span>
+      <div class="com-wrap">
+        <progress-pc :value="percent" :min="0" max="100"></progress-pc>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import Lian from './lian'
-import ProgressBar from './progress-bar.vue'
+import progressMobile from './progress-Mobile.vue'
+import ProgressPc from './progress-pc.vue'
 
 let arrData = [
   {id: 1, parent_id: 0, name: '一级'},
@@ -22,7 +39,7 @@ let arrData = [
 
 export default {
   components:{
-    Lian,ProgressBar
+    Lian,progressMobile,ProgressPc
   },
   data () {
     return {
@@ -35,5 +52,9 @@ export default {
 </script>
 
 <style lang='less' scoped>
+  .list{margin-top:20px;
+    span{display:inline-block;width:200px;}
+    .com-wrap{display:inline-block;margin-left:10px;vertical-align:middle;}
+  }
   .progress{width:300px;}
 </style>
